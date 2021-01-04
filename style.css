@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  overflow: auto;
+  margin: 0;
+  background: rgb(48, 55, 62);
+  background: linear-gradient(
+    0deg,
+    rgba(48, 55, 62, 1) 0%,
+    rgba(14, 16, 18, 1) 100%
+  );
+}
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background: #8b92a5;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b5ccf6;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px #f0f0f0;
+}
+.nav {
+  background: #30373e;
+}
+.button {
+  background: #30373e;
+  text-transform: uppercase !important;
+  font-size: 1rem !important;
+  width: 70%;
+  padding: 1rem;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.button.active {
+  background-color: #3e6ce4 !important;
+}
+form span {
+  color: #3e6ce4 !important;
+}
+.x-axis path,
+.y-axis path,
+.x-axis line,
+y-axis line {
+  stroke: #ccc;
+}
+.x-axis text,
+.y-axis text {
+  fill: #ccc;
+  font-size: 0.9rem;
+}
