@@ -4,7 +4,7 @@ html {
   box-sizing: border-box;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #022648 #00549a;
+  scrollbar-color: #00549a #141414;
 }
 
 *,
