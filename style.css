@@ -22,22 +22,22 @@ body {
     rgba(48, 55, 62, 1) 0%,
     rgba(14, 16, 18, 1) 100%
   );
+  scrollbar-width: thin;
+  scrollbar-color: #022648 #00549a;
 }
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #8b92a5;
+  background: #022648;
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #b5ccf6;
+  background: #00549a;
 }
 ::-webkit-scrollbar-track {
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: inset 7px 10px 12px #f0f0f0;
+  background: #000;
 }
 .container {
   display: flex;
