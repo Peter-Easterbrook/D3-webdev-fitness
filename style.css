@@ -3,6 +3,8 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #022648 #00549a;
 }
 
 *,
@@ -22,8 +24,6 @@ body {
     rgba(48, 55, 62, 1) 0%,
     rgba(14, 16, 18, 1) 100%
   );
-  scrollbar-width: thin;
-  scrollbar-color: #022648 #00549a;
 }
 ::-webkit-scrollbar {
   width: 6px;
