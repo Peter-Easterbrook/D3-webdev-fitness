@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
 
 html {
   box-sizing: border-box;
@@ -14,39 +14,63 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
   min-height: 100vh;
-  overflow: auto;
-  margin: 0;
+  font-family: 'Raleway', sans-serif;
   background: rgb(48, 55, 62);
   background: linear-gradient(
     0deg,
     rgba(48, 55, 62, 1) 0%,
     rgba(14, 16, 18, 1) 100%
   );
+  animation: fadeInAnimation ease-out 3s 1 forwards;
 }
-::-webkit-scrollbar {
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+body::-webkit-scrollbar {
   width: 6px;
   height: 6px;
 }
-::-webkit-scrollbar-thumb {
-  background: #022648;
+body::-webkit-scrollbar-thumb {
+  background: #8b92a5;
   border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #00549a;
+body::-webkit-scrollbar-thumb:hover {
+  background: #b5ccf6;
 }
-::-webkit-scrollbar-track {
-  background: #000;
+body::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+h3,
+h5 {
+  background-color: #000;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  font-weight: 200 !important;
 }
 .container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  place-items: center;
+  justify-content: space-around;
+  width: 80vw;
 }
 
-.nav {
-  background: #30373e;
-}
 .button {
   background: #30373e;
   text-transform: uppercase !important;
@@ -57,6 +81,7 @@ body {
   border: 0;
   border-radius: 4px;
   cursor: pointer;
+  border: 1px solid #bbb;
 }
 .button.active {
   background-color: #3e6ce4 !important;
@@ -75,6 +100,35 @@ y-axis line {
   fill: #ccc;
   font-size: 0.9rem;
 }
-.canvas {
-  margin-right: 3rem;
+.graph {
+  background-color: #000;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  padding: 0 2rem 0 0;
+}
+.sports {
+  background-color: #000;
+  padding: 3rem 2rem !important;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  width: 20rem;
+}
+.form {
+  background-color: #000;
+  padding: 3rem 2rem !important;
+  width: 20rem;
+  border-radius: 0.5rem;
+  border: 1px solid #fff;
+  margin-top: 3rem;
+}
+p {
+  font-weight: 200 !important;
+}
+.input-field input[type='text'] {
+  color: #fff !important;
+}
+.input-field input[type='text']:focus + label {
+  color: #fff !important;
 }
