@@ -38,6 +38,7 @@
     <title>D3 Fitness Tracker</title>
   </head>
   <body>
+    <canvas id="thpace"></canvas>
     <h3 class="white-text z-depth-3">D3 WebDev Fitness</h3>
     <h5 class="white-text z-depth-3">A Fitness Tracker for Developers</h5>
 
@@ -87,6 +88,17 @@
       const db = firebase.firestore();
       const settings = { timestampsInSnapshots: true };
       db.settings(settings);
+    </script>
+    <script src="thpace.min.js"></script>
+    <script>
+      const canvas = document.getElementById('thpace');
+
+      const d3settings = {
+        colors: ['#000', '#0069d2', '#000'],
+        triangleSize: 65,
+      };
+
+      ThpaceGL.create(canvas, d3settings);
     </script>
 
     <script src="https://d3js.org/d3.v6.min.js"></script>
