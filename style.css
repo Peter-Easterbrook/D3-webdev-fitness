@@ -21,13 +21,8 @@ body {
   line-height: 1.5;
   min-height: 100vh;
   font-family: 'Raleway', sans-serif;
-  background: rgb(47, 55, 63);
-  background: linear-gradient(
-    0deg,
-    rgba(47, 55, 63, 1) 0%,
-    rgba(136, 149, 163, 1) 100%
-  );
-  animation: fadeInAnimation ease-out 3s 1 forwards;
+  background-color: #000;
+  animation: fadeInAnimation 2s ease-out 1 forwards;
 }
 @keyframes fadeInAnimation {
   0% {
@@ -47,7 +42,7 @@ body::-webkit-scrollbar {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   margin: 0;
 }
 h3 {
